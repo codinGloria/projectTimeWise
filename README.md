@@ -10,7 +10,7 @@
 <h4> Status: </h4>
   Em andamento...
 
-<h2 align="center">:thinking: Visão Geral do Projeto </h2>
+<h2 align="center"> Visão Geral do Projeto </h2>
 
 <h4> Descrição: </h4>
 O projeto TimeWise tem como objetivo desenvolver uma plataforma de gerenciamento de tempo e tarefas que ajuda os usuários a otimizar sua produtividade pessoal e profissional. A plataforma fornecerá recursos avançados de acompanhamento do tempo, organização de tarefas e insights valiosos para melhorar a gestão do tempo.
