@@ -54,7 +54,10 @@ O escopo do projeto inclui o desenvolvimento de:
 O projeto TimeWise utilizará as seguintes tecnologias:
 
 - Frontend: Angular
-- Backend: Spring Boot Java
+- Backend: 
+    > Maven
+    > Spring Boot
+    > Java (17 LTS)
 - Banco de Dados: MySQL
 - Integração: APIs - Calendários, Tarefas
 
