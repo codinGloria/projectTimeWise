@@ -55,11 +55,9 @@ O projeto TimeWise utilizará as seguintes tecnologias:
 
 - Frontend: Angular
 - Backend: 
-    > Maven
     > Spring Boot
     > Java (17 LTS)
 - Banco de Dados: MySQL
-- Integração: APIs - Calendários, Tarefas
 
 <h4> Riscos e Desafios: </h4>
 Alguns desafios potenciais incluem:
