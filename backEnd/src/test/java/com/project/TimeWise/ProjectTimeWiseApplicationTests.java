@@ -1,10 +1,10 @@
-package com.project.liviabraz.TimeWise;
+package com.project.TimeWise;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TimeWiseApplicationTests {
+class ProjectTimeWiseApplicationTests {
 
 	@Test
 	void contextLoads() {
