@@ -88,8 +88,8 @@ Para mais informações ou dúvidas sobre o projeto TimeWise, entre em contato c
 
 <div align="center">
 <h2> Lívia Faria Braz
-<br><br>
-<a href="mailto:liviafariabraz282@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<br> liviafariabraz282@gmail.com
+<br>
 <a href="https://www.linkedin.com/in/liviabraz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
