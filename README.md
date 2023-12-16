@@ -65,6 +65,9 @@ O projeto TimeWise utilizará as seguintes tecnologias:
 - Dados:
     > Banco: MySQL,
     > JPA e Hibernate
+- Autenticação:
+    > JWT,
+    > Spring Security
 
 <h4> Riscos e Desafios: </h4>
 Alguns desafios potenciais incluem:
