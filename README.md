@@ -5,7 +5,7 @@
 </div>
   
 <h4> Objetivo: </h4>
-  Aplicar meus conhecimentos da Academia e se Deus quiser uma vaga na Atos :heart:
+  Aplicar meus conhecimentos da Academia Java e se Deus quiser uma vaga na Atos :heart:
 
 <h4> Status: </h4>
   Em andamento...
@@ -37,15 +37,19 @@ O escopo do projeto inclui o desenvolvimento de:
 
 - Sistema de Login 
 - Pagina Inicial com: 
-    > Agenda
-    > Habit Tracker 
+    > Agenda,
+    > Habit Tracker,
+    > To Do List,
+    > Water Tracker
 - Controle de ponto de atividades por categoria
-- Página para visualização com dashboards 
-- Página para controle financeiro 
+    > Exemplo: Trabalho, Hobbies, Estudos
+- Controle de gastos
+- Visualização com dashboards
+    > Com filtros para dinheiro ou tempo gastos
 
 <h4> Funcionalidades extras: </h4>
 
-- Configurações para o usuário (modo noturno, preferencias de notificação, fuso horario) 
+- Configurações para o usuário (modo noturno, preferencias de notificação) 
 - Notificações e lembretes 
 - Gerar relatórios sobre o uso do tempo e desempenho das tarefas 
 - Documentação para ajuda ao usuário (sessão help)
@@ -53,11 +57,14 @@ O escopo do projeto inclui o desenvolvimento de:
 <h4> Tecnologias Utilizadas: </h4>
 O projeto TimeWise utilizará as seguintes tecnologias:
 
-- Frontend: Angular
+- Frontend:
+    > Angular
 - Backend: 
-    > Spring Boot
+    > Spring Boot,
     > Java (17 LTS)
-- Banco de Dados: MySQL
+- Dados:
+    > Banco: MySQL,
+    > JPA e Hibernate
 
 <h4> Riscos e Desafios: </h4>
 Alguns desafios potenciais incluem:
@@ -65,12 +72,25 @@ Alguns desafios potenciais incluem:
 - Garantir a segurança dos dados do usuário.
 - Manter uma interface simples e intuitiva.
 - Garantir a escalabilidade da plataforma conforme o número de usuários aumenta.
+- Conseguir atender e ajudar aos usuários com mais implementações futuras.
+
+<h4> Instalação e How To Use </h4>
+
+<h4 align="center"> Preview do Sistema 🔮 </h4>
+<img src="https://github.com/LiviaBraz/projectTimeWise/assets/64878674/17c114cf-b02a-48c4-adbd-f5cf2a8155b5" alt="Página de cadastro">
+<p align="center"> Página para cadastro </p>
+<img src="https://github.com/LiviaBraz/projectTimeWise/assets/64878674/4a5692bc-ff34-49e8-9bea-47e75be3e342" alt="Página de login">
+<p align="center"> Página de login </p>
+<br>
 
 <h4> Contato e Responsáveis: </h4>
 Para mais informações ou dúvidas sobre o projeto TimeWise, entre em contato com:
 
-
 <div align="center">
 <h2> Lívia Faria Braz
-<br> liviafariabraz282@gmail.com </h2>
+<br><br>
+<a href="mailto:liviafariabraz282@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/liviabraz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=120&section=footer"/>
