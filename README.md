@@ -74,9 +74,9 @@ Alguns desafios potenciais incluem:
 - Garantir a escalabilidade da plataforma conforme o número de usuários aumenta.
 - Conseguir atender e ajudar aos usuários com mais implementações futuras.
 
-<h4> Instalação e How To Use </h4>
+<h2 align="center"> Instalação e How To Use </h2>
 
-<h4 align="center"> Preview do Sistema 🔮 </h4>
+<h2 align="center"> Preview do Sistema 🔮 </h2>
 <img src="https://github.com/LiviaBraz/projectTimeWise/assets/64878674/17c114cf-b02a-48c4-adbd-f5cf2a8155b5" alt="Página de cadastro">
 <p align="center"> Página para cadastro </p>
 <img src="https://github.com/LiviaBraz/projectTimeWise/assets/64878674/4a5692bc-ff34-49e8-9bea-47e75be3e342" alt="Página de login">
