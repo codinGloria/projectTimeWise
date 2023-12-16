@@ -29,12 +29,11 @@
   flex-direction: column;
   padding: 0 100px;
   align-items: center;
-  gap: 28px;
+  gap: 14px;
   justify-content: center;
 }
 
 .register{
-  padding-top: 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,5 +67,5 @@ button {
   padding: 16px 48px;
   font-size: 18px;
   cursor: pointer;
-  margin-top: 56px;
+  margin-top: 20px;
 }
