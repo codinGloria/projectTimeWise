@@ -4,11 +4,11 @@
   </div>
   <div class="loginForm">
       <h2>Entre com sua conta :]</h2>
-      <form>
+      <form #loginform="ngForm" (ngSubmit)="loginUser()">
           <label for="email">Email</label><br>
-          <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
+          <input type="email" name="email" placeholder="Digite seu email" [(ngModel)]="user.email"><br>
           <label for="pwd">Senha</label><br>
-          <input type="password" id="pwd" name="pwd" placeholder="Digite sua senha"><br>
+          <input type="password" name="password" placeholder="Digite sua senha" [(ngModel)]="user.password"><br>
           <button type="submit" >Entrar</button>
       </form>
       <div class="register">

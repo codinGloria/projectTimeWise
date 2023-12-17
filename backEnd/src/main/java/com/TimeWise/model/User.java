@@ -9,14 +9,14 @@ public class User {
 	@Id
 	private int id;
 	private String name;
-	private Integer msisdn;
+	private String msisdn;
 	private String email;
 	private String password;
 	
 	public User() {
 	}
 
-	public User(int id, String name, Integer msisdn, String email, String password) {
+	public User(int id, String name, String msisdn, String email, String password) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -42,11 +42,11 @@ public class User {
 		this.name = name;
 	}
 
-	public Integer getMsisdn() {
+	public String getMsisdn() {
 		return msisdn;
 	}
 
-	public void setMsisdn(Integer msisdn) {
+	public void setMsisdn(String msisdn) {
 		this.msisdn = msisdn;
 	}
 
