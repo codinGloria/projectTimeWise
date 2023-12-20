@@ -1,18 +1,29 @@
 package com.TimeWise.model;
 
+import java.util.Date;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 @Entity
 public class User {
 	
 	@Id
 	private int id;
+	
 	private String name;
 	private String msisdn;
 	private String email;
 	private String password;
 	
+	@Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private Date createdAt;
+
 	public User() {
 	}
 
@@ -24,7 +35,6 @@ public class User {
 		this.email = email;
 		this.password = password;
 	}
-
 
 	public int getId() {
 		return id;
@@ -66,4 +76,8 @@ public class User {
 		this.password = password;
 	}
 
+	@PrePersist
+    protected void onCreate() {
+        createdAt = new Date();
+    }
 }

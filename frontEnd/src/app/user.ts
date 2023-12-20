@@ -4,7 +4,5 @@ export class User {
   msisdn!:string;
   name!:string;
   password!:string;
-  constructor(){
-
-  }
+  constructor(){}
 }

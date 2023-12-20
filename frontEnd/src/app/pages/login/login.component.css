@@ -38,10 +38,19 @@
   flex-direction: column;
   align-items: center;
   font-size: 14px;
+  padding-top: 100px;
 }
 
 .loginClick {
   color: red;
+}
+
+small{
+  color:red;
+}
+
+span{
+  font-size: 10px;
 }
 
 input {
