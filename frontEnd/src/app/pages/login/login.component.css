@@ -45,12 +45,19 @@
   color: red;
 }
 
-small{
+.alert, small{
   color:red;
+  font-size: 12px;
+  padding-top: 14px;
 }
 
-span{
-  font-size: 10px;
+.is-invalid{
+  border: 2px solid red;
+  background-color: #f0d0d0;
+}
+
+.is-invalid::placeholder{
+  color: red;
 }
 
 input {

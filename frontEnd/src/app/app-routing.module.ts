@@ -6,7 +6,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -16,13 +16,15 @@ export const routes: Routes = [
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
-    NgIf
+    NgIf,
+    NgClass
   ],
   exports: [RouterModule],
   providers: [ HttpClientModule, HttpClient, ]

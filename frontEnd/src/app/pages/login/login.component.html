@@ -6,11 +6,20 @@
       <h2>Entre com sua conta :]</h2>
       <form #loginform="ngForm" (ngSubmit)="loginUser()">
         <label for="email">Email</label><br>
-        <input type="email" #email="ngModel" name="email" placeholder="Digite seu email" [(ngModel)]="user.email" required><br>
+        <input type="email" #email="ngModel" name="email" placeholder="Digite seu email" [(ngModel)]="user.email" required pattern="[a-z0-9A-Z._]+@[a-z0-9.-]+\.[a-z]{2,4}"
+        [ngClass]="{'is-invalid': email.invalid && (email.dirty || email.touched)}">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+        <div *ngIf="email.errors?.['required']"> Email é obrigatório.</div>
+        <div *ngIf="email.errors?.['pattern']"> Email inválido.</div>
+        </div><br>
         <label for="pwd">Senha</label><br>
-        <input type="password" name="password" placeholder="Digite sua senha" [(ngModel)]="user.password" required><br>
-          <small class="text-danger">{{msg}}</small>
-          <button type="submit" > Entrar </button>
+        <input type="password" #password="ngModel" name="password" placeholder="Digite sua senha" [(ngModel)]="user.password" required
+        [ngClass]="{'is-invalid': password.invalid && (password.dirty || password.touched)}">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert">
+        <div *ngIf="password.errors?.['required']"> A senha é obrigatória.</div>
+        </div><br>
+        <small class="text-danger">{{msg}}</small>
+        <button type="submit" > Entrar </button>
       </form>
       <div class="register">
         <p> Não tem uma conta?</p>
