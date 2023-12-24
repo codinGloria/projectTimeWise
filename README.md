@@ -82,7 +82,7 @@ Alguns desafios potenciais incluem:
 <h2 align="center"> Preview do Sistema 🔮 </h2>
 <a href="https://www.figma.com/file/UfcbBa5mYXR5MMsIDWd1P5/Projeto?type=design&node-id=0%3A1&mode=design&t=Vy7jB4SYuVrXAMZp-1"> Layout Inicial usando Figma </a>
 <br> <br>
-<img src="[https://github.com/LiviaBraz/projectTimeWise/assets/64878674/17c114cf-b02a-48c4-adbd-f5cf2a8155b5](https://github.com/LiviaBraz/projectTimeWise/assets/64878674/3141f1b6-9e1a-439b-8ffb-d4087f92224a)" alt="Página de cadastro">
+<img src="https://github.com/LiviaBraz/projectTimeWise/assets/64878674/c6c8beb1-5abe-4247-8a2a-1dd0e8291ecd" alt="Página de cadastro">
 <p align="center"> Página para cadastro </p>
 <img src="https://github.com/LiviaBraz/projectTimeWise/assets/64878674/4a5692bc-ff34-49e8-9bea-47e75be3e342" alt="Página de login">
 <p align="center"> Página de login </p>
