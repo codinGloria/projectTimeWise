@@ -9,22 +9,8 @@
 }
 
 .loginImg {
-  width: 500px;
-  height: fit-content;
-}
-.alert, small{
-  color:red;
-  font-size: 12px;
-  padding-top: 14px;
-}
-
-.is-invalid{
-  border: 2px solid red;
-  background-color: #f0d0d0;
-}
-
-.is-invalid::placeholder{
-  color: red;
+  width: 400px;
+  height: 100%;
 }
 
 .imgContainer {
@@ -36,37 +22,32 @@
 
 .registerForm {
   background-color: white;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   border-radius: 24px 0 0 24px;
   display: flex;
   flex-direction: column;
-  padding: 0 100px;
+  padding: 0 80px;
   align-items: center;
-  gap: 14px;
   justify-content: center;
 }
 
-.login{
+.login {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
 }
 
 .loginClick {
   color: red;
-}
-
-input {
-  width: 60%;
-  background-color: #b0bac37c;
-  border: none;
-  border-radius: 12px;
-  padding: 16px 12px;
+  padding: 0;
 }
 
 form {
+  height: 68%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,8 +59,56 @@ button {
   background-color: red;
   border-radius: 14px;
   border: none;
-  padding: 16px 48px;
+  padding: 10px 28px;
   font-size: 18px;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.alert,
+small {
+  color: red;
+  font-size: 12px;
+}
+
+.is-invalid::placeholder {
+  color: red;
+}
+
+label {
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.form-group label {
+  font-size: 14px;
+  text-align: left;
+  width: 40%;
+  margin-right: 40px;
+}
+
+.form-group input {
+  width: 340px;
+  background-color: #b0bac37c;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 12px;
+}
+
+.is-invalid {
+  border: none;
+}
+
+.is-invalid {
+  border: 2px solid red;
 }

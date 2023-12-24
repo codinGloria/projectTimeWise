@@ -3,52 +3,76 @@
     <img class="loginImg" src="../../../assets/login.png" alt="Logo">
   </div>
   <div class="registerForm">
+
     <h2>Crie sua conta aqui :]</h2>
+
     <form #Registerform="ngForm" (ngSubmit)="registerUser()">
 
-    <label for="text"> Nome Completo </label><br>
-    <input type="text" #name="ngModel" name="name" placeholder="Digite seu nome" [(ngModel)]="user.name" required
-    [ngClass]="{'is-invalid': name.invalid && (name.dirty || name.touched)}">
-    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
-    <div *ngIf="name.errors?.['required']"> O nome é obrigatório.</div>
-    </div><br>
+      <tr class="form-group">
+        <td><label for="text"> Nome Completo: </label></td>
+        <td><input type="text" #name="ngModel" name="name" placeholder="Digite seu nome" [(ngModel)]="user.name"
+            required [ngClass]="{'is-invalid': name.invalid && (name.dirty || name.touched)}">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+            <div *ngIf="name.errors?.['required']"> O nome é obrigatório.</div>
+          </div>
+        </td>
+      </tr>
 
-    <label for="text"> Telefone </label><br>
-    <input type="text" #msisdn="ngModel" name="msisdn" placeholder="Digite seu telefone" [(ngModel)]="user.msisdn" required
-    [ngClass]="{'is-invalid': msisdn.invalid && (msisdn.dirty || msisdn.touched)}">
-    <div *ngIf="msisdn.invalid && (msisdn.dirty || msisdn.touched)" class="alert">
-    <div *ngIf="msisdn.errors?.['required']"> O número é obrigatório.</div>
-    </div><br>
+      <tr class="form-group">
+        <td><label for="text"> Telefone: </label></td>
+        <td><input type="text" #msisdn="ngModel" name="msisdn" placeholder="Digite seu telefone"
+            [(ngModel)]="user.msisdn" required
+            [ngClass]="{'is-invalid': msisdn.invalid && (msisdn.dirty || msisdn.touched)}">
+          <div *ngIf="msisdn.invalid && (msisdn.dirty || msisdn.touched)" class="alert">
+            <div *ngIf="msisdn.errors?.['required']"> O número é obrigatório.</div>
+          </div>
+        </td>
+      </tr>
 
-    <label for="email">Email</label><br>
-    <input type="email" #email="ngModel" name="email" placeholder="Digite seu email" [(ngModel)]="user.email" required pattern="[a-z0-9A-Z._]+@[a-z0-9.-]+\.[a-z]{2,4}"
-    [ngClass]="{'is-invalid': email.invalid && (email.dirty || email.touched)}">
-    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
-    <div *ngIf="email.errors?.['required']"> Email é obrigatório.</div>
-    <div *ngIf="email.errors?.['pattern']"> Email inválido.</div>
-    </div><br>
+      <tr class="form-group">
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" #email="ngModel" name="email" placeholder="Digite seu email" [(ngModel)]="user.email"
+            required pattern="[a-z0-9A-Z._]+@[a-z0-9.-]+\.[a-z]{2,4}"
+            [ngClass]="{'is-invalid': email.invalid && (email.dirty || email.touched)}">
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+            <div *ngIf="email.errors?.['required']"> Email é obrigatório.</div>
+            <div *ngIf="email.errors?.['pattern']"> Email inválido.</div>
+          </div>
+        </td>
+      </tr>
 
-    <label for="pwd">Senha</label><br>
-    <input type="password" #password="ngModel" name="password" placeholder="Digite sua senha" [(ngModel)]="user.password" required
-    [ngClass]="{'is-invalid': password.invalid && (password.dirty || password.touched)}">
-    <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert">
-    <div *ngIf="password.errors?.['required']"> A senha é obrigatória.</div>
-    </div><br>
+      <tr class="form-group">
+        <td><label for="pwd">Senha:</label></td>
+        <td><input type="password" #password="ngModel" name="password" placeholder="Digite sua senha"
+            [(ngModel)]="user.password" required
+            [ngClass]="{'is-invalid': password.invalid && (password.dirty || password.touched)}">
+          <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert">
+            <div *ngIf="password.errors?.['required']"> A senha é obrigatória.</div>
+          </div>
+        </td>
+      </tr>
 
-    <label for="pwd"> Confirmar senha </label>
-    <input type="password" #confirmPwd="ngModel" name="confirmPwd" placeholder="Confirme sua senha" [(ngModel)]="user.password" required
-    [ngClass]="{'is-invalid': confirmPwd.invalid && (confirmPwd.dirty || confirmPwd.touched)}"><br>
-    <div *ngIf="confirmPwd.invalid && (confirmPwd.dirty || confirmPwd.touched)" class="alert">
-    <div *ngIf="confirmPwd.errors?.['required']"> Você precisa confirmar sua senha.</div>
-    <div *ngIf="confirmPwd.value && password.value"> As senhas não estão iguais. </div>
-    </div><br>
+      <!-- <tr class="form-group">
+        <td><label for="pwd"> Confirmar senha: </label></td>
+        <td><input type="password" #confirmPwd="ngModel" name="confirmPwd" placeholder="Confirme sua senha"
+            [(ngModel)]="user.password" required
+            [ngClass]="{'is-invalid': confirmPwd.invalid && (confirmPwd.dirty || confirmPwd.touched)}"><br>
+          <div *ngIf="confirmPwd.invalid && (confirmPwd.dirty || confirmPwd.touched)" class="alert">
+            <div *ngIf="confirmPwd.errors?.['required']"> Você precisa confirmar sua senha.</div>
+            <div *ngIf="password !== confirmPwd"> As senhas não estão iguais. </div>
+          </div>
+        </td>
+      </tr> -->
 
-    <small class="text-danger">{{msg}}</small>
-    <button> Criar Conta </button>
+      <small class="text-danger">{{msg}}</small>
+      <button> Criar Conta </button>
+
     </form>
-   <div class="login">
-      <p> Já tem uma conta?</p>
-      <a href="" class="loginClick"> Log in</a>
+
+    <div class="login">
+      <br>
+      <p> Já tem uma conta? <a href="" class="loginClick"> Log in</a> </p>
+
     </div>
   </div>
 </div>

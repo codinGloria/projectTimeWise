@@ -19,6 +19,11 @@ export class RegisterComponent {
   }
 
   registerUser(){
+
+    if (!this.user.name || !this.user.msisdn || !this.user.email || !this.user.password) {
+      this.msg=("Você precisa preencher todos os campos");
+    }
+    else {
       this._service.registerUserFromRemote(this.user).subscribe({
         next: data => {
           console.log("Sucesso.", data);
@@ -30,6 +35,6 @@ export class RegisterComponent {
           this.msg=("Esse email já existe. Tente novamente!");
         }
       })
+    }
   }
-
 }

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgClass, NgIf } from '@angular/common';
 
