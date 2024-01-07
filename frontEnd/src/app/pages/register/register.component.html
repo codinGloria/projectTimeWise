@@ -52,20 +52,8 @@
         </td>
       </tr>
 
-      <!-- <tr class="form-group">
-        <td><label for="pwd"> Confirmar senha: </label></td>
-        <td><input type="password" #confirmPwd="ngModel" name="confirmPwd" placeholder="Confirme sua senha"
-            [(ngModel)]="user.password" required
-            [ngClass]="{'is-invalid': confirmPwd.invalid && (confirmPwd.dirty || confirmPwd.touched)}"><br>
-          <div *ngIf="confirmPwd.invalid && (confirmPwd.dirty || confirmPwd.touched)" class="alert">
-            <div *ngIf="confirmPwd.errors?.['required']"> Você precisa confirmar sua senha.</div>
-            <div *ngIf="password !== confirmPwd"> As senhas não estão iguais. </div>
-          </div>
-        </td>
-      </tr> -->
-
       <small class="text-danger">{{msg}}</small>
-      <button> Criar Conta </button>
+      <button [disabled]="Registerform.form.invalid"> Criar Conta </button>
 
     </form>
 

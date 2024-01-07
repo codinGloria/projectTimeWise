@@ -19,7 +19,7 @@
         <div *ngIf="password.errors?.['required']"> A senha é obrigatória.</div>
         </div><br>
         <small class="text-danger">{{msg}}</small>
-        <button type="submit" > Entrar </button>
+        <button [disabled]="loginform.form.invalid" type="submit" > Entrar </button>
       </form>
       <div class="register">
         <p> Não tem uma conta?</p>

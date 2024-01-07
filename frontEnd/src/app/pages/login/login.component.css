@@ -88,3 +88,7 @@ button {
 h2{
   padding-top: 20px;
 }
+
+button[disabled]{
+  opacity: 0.6;
+}
